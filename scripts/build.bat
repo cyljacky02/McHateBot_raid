@@ -9,7 +9,7 @@ copy settings-orginal.json out
 xcopy .\dist out\dist /E /I
 move out\config-orginal.json out\config.json
 move out\settings-orginal.json out\settings.json
-call pkg ./out\McHateBot.js -t node18-win-x64 -c package.json
+call npx @yao-pkg/pkg ./out\McHateBot.js -t node22-win-x64 -c package.json
 copy config-orginal.json exe
 copy settings-orginal.json exe
 xcopy .\language exe\language /E /I
